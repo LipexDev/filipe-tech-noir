@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08080A">
+  <meta name="description" content="Portfólio de Filipe Santos — Desenvolvedor em formação. Java, Python, JavaScript, HTML, CSS e SQL.">
+  <title>FILIPE SANTOS // DEV PORTFÓLIO</title>
+
+  <!-- Premium type pairing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Brand icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="code-rain" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor-crosshair"></span>
+    <span class="cursor-coords">X:000 Y:000</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Filipe - início">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>FILIPE SANTOS<span class="accent">_</span></span>
+    </a>
+    <div class="top-status">
+      <span class="status-dot"></span>
+      <span>AVAILABLE_TO_BUILD</span>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>01</span> DIGITAL CRAFT / PORTFOLIO</p>
+        <h1>FILIPE SANTOS</h1>
+        <div class="hero-subline">
+          <span class="terminal-prompt">&gt; </span><span id="typing"></span><span class="caret">▋</span>
+        </div>
+        <p class="lead">
+          Transformo ideias em código e projetos em soluções.
+          Experiência profissional, disciplina e atenção aos detalhes agora direcionadas à tecnologia.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="#about"><span>EXPLORAR PERFIL</span><i class="fa-solid fa-arrow-down"></i></a>
+          <a class="btn btn-ghost magnetic" href="https://github.com/LipexDev" target="_blank" rel="noopener noreferrer"><span>VER GITHUB</span><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="stack-mini" aria-label="Tecnologias">
+          <span>JAVA</span><span>PYTHON</span><span>JS</span><span>HTML</span><span>CSS</span><span>SQL</span>
+        </div>
+      </div>
+
+      <div class="portrait-wrap reveal" id="portrait">
+        <div class="portrait-frame">
+          <div class="frame-corner corner-tl"></div>
+          <div class="frame-corner corner-tr"></div>
+          <div class="frame-corner corner-bl"></div>
+          <div class="frame-corner corner-br"></div>
+          <img src="assets/filipe.png" alt="Filipe usando camiseta preta, retrato de perfil profissional" class="portrait">
+          <div class="portrait-overlay"></div>
+          <div class="portrait-meta">
+            <span>DEV_001</span>
+            <span>LAT -23.45 / LON -46.53</span>
+          </div>
+        </div>
+        <div class="portrait-shadow"></div>
+      </div>
+    </section>
+
+    <section class="code-section section-shell" id="about">
+      <div class="section-label reveal"><span>02</span> ABOUT.EXE</div>
+      <div class="code-window reveal">
+        <div class="window-bar">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>filipe.profile.js</span>
+          <span class="window-state">LIVE</span>
+        </div>
+        <div class="code-body">
+          <div class="line-numbers" aria-hidden="true">01<br>02<br>03<br>04<br>05<br>06<br>07<br>08<br>09<br>10<br>11<br>12</div>
+          <pre><code><span class="tok-purple">const</span> <span class="tok-blue">filipe</span> = {
+  <span class="tok-key">nome</span>: <span class="tok-string">"Filipe"</span>,
+  <span class="tok-key">formacao</span>: <span class="tok-string">"ADS — Desenvolvedor em formação"</span>,
+  <span class="tok-key">missao</span>: <span class="tok-string">"<span id="bio-typed"></span>"</span>,
+  <span class="tok-key">stack</span>: [<span class="lang" data-lang="Java">"Java"</span>, <span class="lang" data-lang="Python">"Python"</span>, <span class="lang" data-lang="JavaScript">"JavaScript"</span>,
+           <span class="lang" data-lang="HTML">"HTML"</span>, <span class="lang" data-lang="CSS">"CSS"</span>, <span class="lang" data-lang="SQL">"SQL"</span>],
+  <span class="tok-key">mindset</span>: <span class="tok-string">"Aprender. Construir. Evoluir."</span>
+};</code></pre>
+        </div>
+        <div class="compile-console" id="compile-console">
+          <span class="console-prefix">&gt;_</span>
+          <span id="compile-text">Passe o mouse sobre uma linguagem para compilar.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement section-shell">
+      <div class="statement-line reveal"></div>
+      <blockquote class="reveal">
+        <span>“</span>Minha experiência profissional me trouxe disciplina,
+        responsabilidade e atenção aos detalhes. Hoje, direciono essas habilidades
+        para a tecnologia.<span>”</span>
+      </blockquote>
+      <p class="statement-caption reveal">// BUILDING WITH PURPOSE</p>
+    </section>
+
+    <section class="social-section section-shell" id="connect">
+      <div class="section-label reveal"><span>03</span> CONNECT.SH</div>
+      <div class="social-grid">
+        <a class="social-card github magnetic reveal" href="https://github.com/LipexDev" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="social-copy"><small>01 / CODE</small><strong>GITHUB</strong><span>Projetos, estudos e código aberto.</span></div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="hover-message">ENTER THE REPOSITORY →</div>
+        </a>
+
+        <a class="social-card linkedin magnetic reveal" href="https://www.linkedin.com/in/filipe-da-silva-santos-2a825710b" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="social-copy"><small>02 / CAREER</small><strong>LINKEDIN</strong><span>Trajetória, formação e experiências.</span></div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="hover-message">OPEN PROFESSIONAL PROFILE →</div>
+        </a>
+
+        <a class="social-card instagram magnetic reveal" href="https://www.instagram.com/o_filipesantos" target="_blank" rel="noopener noreferrer">
+          <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="social-copy"><small>03 / LIFE</small><strong>INSTAGRAM</strong><span>Conteúdo, música e bastidores.</span></div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+          <div class="hover-message">FOLLOW THE SIGNAL →</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="footer-brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>FILIPE SANTOS<span class="accent">_</span></span>
+    </div>
+    <div class="system-readout">
+      <span>LOCAL <b id="local-time">--:--:--</b></span>
+      <span>UPTIME <b id="uptime">00:00:00</b></span>
+      <span>STATUS <b class="online">ONLINE</b></span>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> FILIPE SANTOS // BUILT WITH CODE.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
